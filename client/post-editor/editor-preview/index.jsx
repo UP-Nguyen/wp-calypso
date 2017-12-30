@@ -16,7 +16,9 @@ import { localize } from 'i18n-calypso';
 import { omitUrlParams } from 'lib/url';
 import WebPreview from 'components/web-preview';
 import WebPreviewContent from 'components/web-preview/content';
-import { isEnabled } from 'config';
+import config from 'config';
+
+const { isEnabled } = config;
 
 class EditorPreview extends React.Component {
 	static propTypes = {
